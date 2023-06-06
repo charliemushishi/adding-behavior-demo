@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    background-image: url(../assets/matrix-bg.jpg);
+    background-repeat: repeat-x;
+
+    color: white;
+}
+
+#banner {
+    padding: 3rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+#banner h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    display: inline-block;
+    margin: 1rem auto;
+    background-color: black;
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Bruno Ace', cursive;
+    border-bottom: white double 2px;
+    font-size: 2em;
+}
+
+#guestbook-comments__section p {
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.blue #guestbook-comments__section p {
+    background-color: rgb(255, 255, 255, .5);
+}
+
+body.blue {
+    background-image: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(13,9,121,1) 35%, rgba(0,11,255,1) 100%);
+}
+
+body.blue #banner h1, body.red #banner h1 {
+    background-color: rgb(0,0,0,0);
+    font-family: 'Bruno Ace', cursive;
+}
+
+body.red {
+    background-image: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,0,1) 100%);
+}
+
+.under-construction {
+    text-align: center;
+}
+
+@keyframes rotate {
+    0% {rotate: 0deg;}
+    50% {rotate: 180deg;}
+    100% {rotate: 359deg;}
+}
+
+.gif img {
+    display: inline-block;
+    max-width: 50px;
+}
+
+.gif img:hover {
+    animation: rotate 1s infinite linear;
+}
+
+#sphere img {
+    max-width: 300px;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+#welcome-container {
+    text-align: center;
+}
+
+#gif-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+quote {
+    margin: 100px;
+    text-transform: full-width;
+    font-size: 1.5em;
+}
+
+quote::before, quote::after {
+    content: "\""
+}
+
+.choice-buttons__div {
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choice-buttons__div button{
+    padding: 1rem;
+    font-size: 3rem;
+    border: none;
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+    border: white double 5px;
+}
+
+#blue__button {
+    background-color: blue;
+    transition: background-color .5s;
+}
+
+#red__button {
+    background-color: red;
+    transition: background-color .5s;
+}
+
+#blue__button:hover, #red__button:hover {
+    background-color: black;
+}
+
+.lyrics {
+    font-style: italic;
+}
+.lyrics::before, .lyrics::after {
+    content: " *~*~*~* ";
+}
+
+/* 
+*:hover {
+    animation: rotate 5s infinite linear;
+} */
