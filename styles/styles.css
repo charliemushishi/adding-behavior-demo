@@ -50,7 +50,7 @@ body.blue {
     background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(13,9,121,1) 35%, rgba(0,11,255,1) 100%);
 }
 
-body.blue #banner h1, body.red #banner h1 {
+body.blue #banner h1, body.red #banner h1, body.green #banner h1 {
     background-color: rgb(0,0,0,0);
     font-family: 'Bruno Ace', cursive;
 }
@@ -60,6 +60,13 @@ body.red {
     background: rgb(2,0,36);
     background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,0,1) 100%);
 }
+
+body.green {
+    background-image: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgb(11, 60, 3) 35%, rgb(10, 170, 15) 100%); 
+}
+
 
 .under-construction {
     text-align: center;
@@ -137,7 +144,12 @@ quote::before, quote::after {
     transition: background-color .5s;
 }
 
-#blue__button:hover, #red__button:hover {
+#green__button {
+    background-color: green;
+    transition: background-color .5s;
+}
+
+#blue__button:hover, #red__button:hover, #green__button:hover {
     background-color: black;
 }
 

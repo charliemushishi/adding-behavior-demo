@@ -37,6 +37,10 @@ const changeTheme = () => {
 
 };
 
+const setGreenTheme = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.className = "green"
+}
 const setBlueTheme = () => {
     const body = document.getElementsByTagName("body")[0];
     body.className = "blue";
@@ -57,6 +61,8 @@ const registerEventHandlers = () => {
     document.getElementById("blue__button").addEventListener("click", setBlueTheme);
 
     document.getElementById("red__button").addEventListener("click", setRedTheme);
+
+    document.getElementById("green__button").addEventListener("click", setGreenTheme);
 };
 
 document.addEventListener("DOMContentLoaded", registerEventHandlers);
